@@ -1,0 +1,45 @@
+<!-- <template>
+    <section class="my-20">
+      <div v-for="project in featuredProjects" :key="project.key">
+        <h2 class="text-2xl text-center text-white">{{ project.name }}</h2>
+        <h1
+          class="my-2 text-4xl font-semibold text-center text-white"
+          v-for="type in project.type"
+        >
+          {{ type }}
+        </h1>
+        <div class="flex items-center justify-center gap-5">
+          <a
+            target="_blank"
+            :href="project.website"
+            class="text-lg text-blue-500 cursor-pointer"
+            href=""
+            >View Site</a
+          >
+          <a class="text-lg text-blue-500 cursor-pointer" href="">View Detail</a>
+        </div>
+  
+        <div class="flex items-center justify-center">
+          <img src="@/assets/img/featured/example.png" />
+        </div>
+      </div>
+  
+      <div class="flex items-center justify-center">
+        <h3
+          class="text-5xl font-medium text-white cursor-pointer hover:underline"
+        >
+          See All Projects
+        </h3>
+      </div>
+    </section>
+  </template>
+  
+  <script setup>
+  import { computed } from "vue";
+  import { useProjectsStore } from "@/stores/projects";
+  
+  const projectsStore = useProjectsStore();
+  const featuredProjects = computed(() => projectsStore.projects.filter((p) => p.featured));
+  
+  </script>
+   -->
