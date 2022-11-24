@@ -1,39 +1,9 @@
-<!-- <template>
-    <div>
-      <main class="mx-auto max-w-7xl">
-        <section class="grid grid-cols-2 gap-10 project-grids projects-grid">
-          <a
-            href=""
-            v-for="project in projects"
-            :key="project.key"
-            @click="$router.push('/projects/' + project.key)"
-          >
-            <article
-              class="lg:transition-transform lg:duration-300 lg:hover:scale-105"
-            >
-              <img src="@/assets/img/projects/example.png" />
-              <div class="flex flex-col items-start justify-center my-2">
-                <span>Abril 2022</span>
-                <span class="text-lg font-medium text-white">{{
-                  project.name
-                }}</span>
-              </div>
-            </article>
-          </a>
-        </section>
-      </main>
-    </div>
-  </template>
-  
-  <script setup>
-  import { computed } from "vue";
-  import { useProjectsStore } from "@/stores/projects";
-  import { Icon } from "@iconify/vue";
-  import Header from "@/components/Header.vue";
-  
-  const projectsStore = useProjectsStore();
-  const projects = computed(() => projectsStore.projects);
-  </script>
-  
-  <style></style>
-   -->
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectGrid from "../../components/ProjectGrid.vue";
+import { Icon } from "@iconify/vue";
+---
+
+<Layout title="About">
+  <ProjectGrid client:load />
+</Layout>

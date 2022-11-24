@@ -1,0 +1,149 @@
+<template>
+  <div >
+    <div class="relative w-full">
+      <div class="absolute" style="left: 50%; bottom: 0">
+        <Icon icon="emojione:glowing-star" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 55%">
+        <Icon icon="fxemoji:rocket" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 45%; top: 40px">
+        <Icon icon="fxemoji:rocket" width="40" height="40" />
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center w-2/4 gap-10 py-40 mx-auto text-center"
+    >
+      <h1 class="text-4xl font-semibold text-center text-white">
+        I like building digital products, here is my story
+      </h1>
+
+      <p class="text-lg font-extralight">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+      <div
+        class="flex items-center justify-center my-10 text-lg font-semibold text-white"
+      >
+        BUILDING SOFTWARE WITH
+        <Icon class="mx-2" icon="emojione-v1:heart-suit" /> FROM CHILE TO THE
+        WORLD
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-4xl font-semibold text-center text-white">Skills</h1>
+
+      <div>
+        <h2 class="my-10 text-3xl font-semibold text-center text-white">
+          Languages
+        </h2>
+        <div class="flex items-center justify-center gap-10 mt-10">
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="my-10 text-3xl font-semibold text-center text-white">
+          Libraries / Frameworks
+        </h2>
+        <div class="flex items-center justify-center gap-10 mt-10">
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+
+          <div
+            class="flex px-6 py-5 rounded-2xl"
+            style="width: auto; background: #19191a"
+          >
+            <div class="flex items-center justify-center pl-2 pr-4">
+              <Icon width="60" icon="logos:vue" />
+            </div>
+            <div>
+              <span class="text-4xl font-medium text-gray-300">Vue</span>
+              <p class="font-light">2 years experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center my-24">
+      <h3
+        class="text-5xl font-medium text-white cursor-pointer hover:underline"
+      >
+        Education
+      </h3>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { Icon } from "@iconify/vue";
+</script>
