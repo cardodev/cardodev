@@ -23,22 +23,26 @@
       </div>
       <div class="col-span-2" role="tablist">
         <div class="relative w-full">
-          <div class="flex w-full">
+          <div class="w-full">
             <div>
-              <h3 class="text-xl text-white">
-                <span class="font-semibold">{{ selectedJob.role }}</span>
-                <span class="text-violet-700">
-                  &nbsp;@
+              <div class="flex justify-between text-xl text-white">
+                <div>
+                  <span class="font-semibold">{{ selectedJob.role }}</span>
+                </div>
+                <div>
                   <a
                     target="_blank"
-                    class="cursor-pointer"
-                    :href="selectedJob.companyWebsite"
                     rel="noopener noreferrer"
+                    :href="selectedJob.companyWebsite"
                   >
-                    {{ selectedJob.company }}
+                    <img
+                      width="45"
+                      class="cursor-pointer rounded-xl"
+                      :src="selectedJob.companyLogo"
+                    />
                   </a>
-                </span>
-              </h3>
+                </div>
+              </div>
 
               <p class="my-1 font-light">
                 {{ selectedJob.startDate }} - {{ selectedJob.endDate }}
@@ -70,22 +74,32 @@ const jobs = [
     company: "Apside",
     key: "apside",
     companyWebsite: "https://apside.cl/",
-    features: [],
-  },
-  {
-    role: "Full-stack Developer",
-    company: "prtal",
-    key: "prtal",
-    companyWebsite: "https://prtal.app/",
-    startDate: "Sep 2022",
+    companyLogo: "/img/experience/apside.jpeg",
+    startDate: "Jul 2022",
     endDate: "present",
-    features: [],
+    features: [
+      "Desarrollo a través de prácticas ágiles (Scrum).",
+      "Desarrollo frontend con arquitectura microfrontend a través de la plataforma Modyo y el framework Vue.js.",
+      "Desarrollo en arquitectura de microservicios a través de patrón BFF con Python, FastAPI y NestJS.",
+      "Control de versiones con Git y Bitbucket.",
+    ],
   },
+  // {
+  //   role: "Backend Developer",
+  //   company: "prtal",
+  //   key: "prtal",
+  //   companyWebsite: "https://prtal.app/",
+  //   companyLogo: "/img/experience/apside.jpeg",
+  //   startDate: "Sep 2022",
+  //   endDate: "present",
+  //   features: ["Desarrollo de API REST con PHP y Laravel."],
+  // },
   {
     role: "Full-stack Developer",
     company: "Pckz",
     key: "pckz",
     companyWebsite: "https://pckz.cl/",
+    companyLogo: "/img/experience/pckz.gif",
     startDate: "Ago 2021",
     endDate: "Jun 2022",
     features: [

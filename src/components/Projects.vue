@@ -5,12 +5,7 @@
     </h1>
 
     <div class="grid grid-cols-3 gap-10 my-10">
-      <div
-        v-for="project in notFeaturedProjects"
-        :key="project.key"
-        class="p-5 my-4 rounded-lg"
-        style="background: #19191a"
-      >
+      <div class="p-5 my-4 rounded-lg" style="background: #19191a">
         <div class="flex items-center justify-between">
           <div>
             <Icon
@@ -21,20 +16,15 @@
             />
           </div>
           <div class="flex gap-3">
-            <a
-              class="cursor-pointer"
-              target="__blank"
-              :href="project.repositoryLink"
-            >
+            <a class="cursor-pointer" target="__blank" href="">
               <Icon
-                v-if="project.repositoryProvider === 'github'"
                 icon="akar-icons:github-fill"
                 color="white"
                 width="32"
                 height="32"
               />
             </a>
-            <a class="cursor-pointer" target="__blank" :href="project.website">
+            <a class="cursor-pointer" target="__blank" href="">
               <Icon
                 icon="bx:link-external"
                 color="white"
@@ -45,15 +35,48 @@
           </div>
         </div>
         <div class="my-4">
-          <span class="text-2xl font-semibold text-white">
-            {{ project.name }}
-          </span>
+          <span class="text-2xl font-semibold text-white"> Revolut.Art </span>
           <p class="my-2 text-gray-200 font-extralight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste
-            tempore consequatur inventore perferendis fugit aliquid voluptas
-            alias asperiores ipsum magnam expedita, cupiditate quidem, dicta
-            aperiam delectus ipsa voluptate doloremque.
+            Beautiful and embeddable NFTs Gallery. Connect your wallets, create
+            a NFTs gallery and share it everywhere.
           </p>
+          <div class="flex flex-wrap gap-2 my-2">
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              TypeScript
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              React
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              Next.js
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              Tailwind
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              Web3
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              Solidity
+            </span>
+            <span
+              class="text-xs font-semibold text-gray-200 bg-slate-700 py-1 px-2 rounded-xl"
+            >
+              Ethereum
+            </span>
+          </div>
         </div>
       </div>
     </div>
