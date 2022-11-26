@@ -21,8 +21,8 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <SocialMediaAside />
-    <ContactInfoAside />
+    <SocialMediaAside client:load />
+    <ContactInfoAside client:load />
     <Header />
     <main class="mx-auto max-w-7xl">
       <slot></slot>
