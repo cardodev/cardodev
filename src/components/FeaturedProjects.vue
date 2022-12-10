@@ -1,6 +1,6 @@
 <template>
   <section class="my-20">
-    <div v-for="project in featuredProjects" :key="project.key">
+    <!-- <div v-for="project in featuredProjects" :key="project.key">
       <h2 class="text-2xl text-center text-white">{{ project.name }}</h2>
       <h1
         class="my-2 text-4xl font-semibold text-center text-white"
@@ -22,21 +22,25 @@
       <div class="flex items-center justify-center">
         <img src="/img/featured/example.png" />
       </div>
-    </div>
+    </div> -->
 
-    <div class="flex items-center w-full text-center justify-center">
+    <!-- <div class="flex items-center w-full text-center justify-center my-10">
       <a
+        @click="showAllProjects = !showAllProjects"
         class="cursor-pointer text-lg text-white font-semibold px-6 py-4 rounded-full bg-purple flex items-center bg-purple-hover"
       >
         <Icon icon="mingcute:file-download-line" />
-        Ver todos los proyectos
+        {{ showAllProjects ? "Ver menos" : "Ver todos los proyectos" }}
       </a>
-    </div>
+    </div> -->
+
+    <ProjectGrid client:load />
   </section>
 </template>
 
 <script setup>
-import { computed } from "vue";
+import ProjectGrid from "../components/ProjectGrid.vue";
+import { computed, ref } from "vue";
 
 const projects = [
   {
@@ -71,5 +75,7 @@ const projects = [
     featured: true,
   },
 ];
+const showAllProjects = ref(false);
+
 const featuredProjects = computed(() => projects.filter((p) => p.featured));
 </script>

@@ -1,7 +1,7 @@
 <template>
   <aside class="fixed left-0 items-center hidden h-screen pl-10 pr-5 lg:flex">
     <nav class="flex flex-col gap-10 pt-40">
-      <a>
+      <a href="https://github.com/dcgx" target="__blank" class="cursor-pointer">
         <Icon
           icon="akar-icons:instagram-fill"
           color="white"
@@ -32,4 +32,3 @@
 <script setup>
 import { Icon } from "@iconify/vue";
 </script>
-
