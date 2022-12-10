@@ -8,10 +8,9 @@ const { project } = Astro.params;
 console.log({ project });
 
 import Layout from "../../layouts/Layout.astro";
-import ProjectDetail from "../../components/ProjectDetail.vue";
-import { Icon } from "@iconify/vue";
+import ProjectDetail from "../../components/ProjectDetail.astro";
 ---
 
 <Layout title="About">
-  <ProjectDetail client:load />
+  <ProjectDetail />
 </Layout>
