@@ -24,12 +24,13 @@
       </div>
     </div>
 
-    <div class="flex items-center justify-center">
-      <h3
-        class="text-5xl font-medium text-white cursor-pointer hover:underline"
+    <div class="flex items-center w-full text-center justify-center">
+      <a
+        class="cursor-pointer text-lg text-white font-semibold px-6 py-4 rounded-full bg-purple flex items-center bg-purple-hover"
       >
-        See All Projects
-      </h3>
+        <Icon icon="mingcute:file-download-line" />
+        Ver todos los proyectos
+      </a>
     </div>
   </section>
 </template>

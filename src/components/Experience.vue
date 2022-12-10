@@ -1,9 +1,16 @@
 <template>
   <section class="my-20">
-    <h1 class="text-4xl font-semibold text-center text-white">
+    <!-- <h1 class="text-4xl font-semibold text-center text-white">
       Where i Worked
+    </h1> -->
+    <h1 class="text-5xl font-semibold text-center text-white">
+      ¿Donde he
+      <span
+        class="flex justify-center text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600"
+      >
+        Trabajado?.
+      </span>
     </h1>
-
     <div class="grid grid-cols-3 my-14">
       <div class="col-span-1">
         <div
@@ -18,7 +25,7 @@
           @click="setSelectedJob(job)"
           role="tab"
         >
-          <span class="mx-2">{{ job.company }}</span>
+          <span class="mx-2">{{ job.company }} </span>
         </div>
       </div>
       <div class="col-span-2" role="tablist">
@@ -47,6 +54,7 @@
               <p class="my-1 font-light">
                 {{ selectedJob.startDate }} - {{ selectedJob.endDate }}
               </p>
+              <p>Santiago, 🇨🇱 CL</p>
 
               <ul>
                 <li

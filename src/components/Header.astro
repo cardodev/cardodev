@@ -1,19 +1,47 @@
 <header class="header">
-  <div class="header-content grid grid-cols-2 px-8 py-8">
+  <div class="header-content grid grid-cols-2 px-8 py-8 z-50">
     <div>
       <a href="/" class="text-lg font-semibold text-white">Diego Castillo</a>
     </div>
-    <div class="flex justify-end gap-8">
+    <div class="flex gap-3 h-10">
       <a
         href="/about"
-        class="text-lg font-light text-white cursor-pointer hover:text-violet-500 hover:font-medium"
+        class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
       >
-        About</a
+        Sobre mí</a
       >
-      <a href="/projects" class="text-lg text-white">Work</a>
-      <a href="/education" class="text-lg text-white">Education</a>
-      <a class="text-lg text-white">Resume</a>
-      <a class="text-lg text-white">Search</a>
+      <div class="flex items-center">
+        <a
+          href="/projects"
+          class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
+        >
+          Experiencia</a
+        >
+      </div>
+      <div class="flex items-center">
+        <a
+          href="/education"
+          class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
+        >
+          Educación</a
+        >
+      </div>
+      <div class="flex items-center">
+        <a
+          href="/"
+          class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
+        >
+          Resumen</a
+        >
+      </div>
+
+      <div class="flex items-center">
+        <button
+          class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-purple flex items-center bg-purple-hover"
+        >
+          Contacto
+        </button>
+      </div>
     </div>
   </div>
 </header>

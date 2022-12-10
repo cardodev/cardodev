@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="text-5xl font-semibold text-center text-white">Mi Stack</h1>
+    <h1 class="text-5xl font-semibold text-center text-white">Tecnologías</h1>
     <div class="mt-10" style="min-height: 160px">
       <swiper
         :slidesPerView="4"
@@ -23,7 +23,9 @@
               <span class="text-4xl font-medium text-gray-300">
                 {{ stack.name }}
               </span>
-              <p class="font-light">{{ stack.experience }} years experience</p>
+              <p class="font-light">
+                {{ stack.experience }} años de experiencia
+              </p>
             </div>
           </a>
         </swiper-slide>

@@ -1,7 +1,13 @@
 <template>
   <section>
-    <h1 class="text-5xl font-medium text-center text-white">
-      Other Noteworthy Projects
+    <h1 class="text-5xl font-semibold text-center text-white">
+      Otros Proyectos
+      <span
+        class="flex justify-center text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600"
+      >
+        Destacados.
+      </span>
+      <!-- Other Noteworthy Projects -->
     </h1>
 
     <div class="grid grid-cols-3 gap-10 my-10">

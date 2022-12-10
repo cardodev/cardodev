@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -62,14 +61,30 @@
 
 body {
   color: var(--color-text);
-  background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  text-size-adjust: 100%;
+  line-height: 1.5;
+  tab-size: 4;
+  margin: 0;
+  padding: 0;
+  background: var(--color-background);
+  z-index: -1;
 }
 
-#app {
+.main-content {
+}
+.main-content::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 110vh;
+  width: 100%;
+  z-index: -1;
+  /* background: url(../assets/fig-1.svg) center bottom / cover no-repeat; */
 }
 
 .bg-black {
@@ -78,6 +93,13 @@ body {
 
 .text-purple {
   color: #6200ee !important;
+}
+.bg-purple {
+  background-color: #6200ee !important;
+}
+
+.bg-purple-hover:hover {
+  background-color: #520cb5 !important;
 }
 
 /* Transitions */
@@ -90,7 +112,6 @@ body {
 .fade-leave-active {
   transition: opacity 0.1s ease-out;
 }
-
 
 /* Header */
 .header {
