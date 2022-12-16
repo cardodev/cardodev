@@ -1,14 +1,11 @@
 <template>
   <section class="my-20">
-    <!-- <h1 class="text-4xl font-semibold text-center text-white">
-      Where i Worked
-    </h1> -->
     <h1 class="text-5xl font-semibold text-center text-white">
-      ¿Donde he
+      Where i
       <span
         class="flex justify-center text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-sky-400 to-blue-600"
       >
-        Trabajado?.
+        Worked?.
       </span>
     </h1>
     <div class="grid grid-cols-3 my-14">
@@ -78,7 +75,7 @@ import { ref } from "vue";
 
 const jobs = [
   {
-    role: "Software Engineer",
+    role: "Frontend Developer",
     company: "Apside",
     key: "apside",
     companyWebsite: "https://apside.cl/",
@@ -92,16 +89,6 @@ const jobs = [
       "Control de versiones con Git y Bitbucket.",
     ],
   },
-  // {
-  //   role: "Backend Developer",
-  //   company: "prtal",
-  //   key: "prtal",
-  //   companyWebsite: "https://prtal.app/",
-  //   companyLogo: "/img/experience/apside.jpeg",
-  //   startDate: "Sep 2022",
-  //   endDate: "present",
-  //   features: ["Desarrollo de API REST con PHP y Laravel."],
-  // },
   {
     role: "Full-stack Developer",
     company: "Pckz",

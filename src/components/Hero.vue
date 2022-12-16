@@ -1,21 +1,17 @@
 <template>
   <section class="hero_section" id="hero">
     <div class="grid grid-cols-2 py-40 mx-auto text-center">
-      <div class="flex flex-col items-start justify-start gap-6">
-        <h1 class="text-7xl font-bold text-left text-white typed-text my-8">
-          dcgx<span class="text-purple text-7xl font-bold">.dev</span>
-          <span class="blinking-cursor">|</span>
-          <span class="cursor" :class="{ typing: true }">&nbsp;</span>
-        </h1>
-        <h1 class="text-5xl font-regular text-left text-white typed-text">
-          Full-stack Developer and
-        </h1>
-        <h1 class="text-5xl font-medium text-left text-purple">
-          Mobile Developer.
-        </h1>
+      <div class="flex flex-col items-start justify-center gap-6">
+        <div class="flex gap-4">
+          <h1>Software Engineer</h1>
+          <h1>Full-stack Engineer</h1>
+          <h1>Freelance</h1>
+        </div>
         <p class="text-xl font-light text-left text-gray-300">
-          I specialized in Web Development. I have experience in Frontend and
-          Backend Development.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem accusamus tenetur recusandae, ut sunt porro maxime
+          nesciunt fugiat aliquid, cumque autem dolores optio culpa omnis
+          assumenda repellendus dolorum rem mollitia!
         </p>
         <div class="flex gap-5">
           <a
@@ -34,7 +30,7 @@
             class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-sky-600 flex items-center hover:bg-sky-700"
           >
             <Icon icon="ic:round-work-outline" width="24px" class="mr-1" />
-            Experiencia
+            Experience
           </button>
         </div>
       </div>

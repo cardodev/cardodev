@@ -1,13 +1,12 @@
 <template>
-  <section>
+  <section class="my-10">
     <h1 class="text-5xl font-semibold text-center text-white">
-      Otros Proyectos
+      Other Noteworthy
       <span
         class="flex justify-center text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600"
       >
-        Destacados.
+        Projects.
       </span>
-      <!-- Other Noteworthy Projects -->
     </h1>
 
     <div class="grid grid-cols-3 gap-10 my-10">

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="text-5xl font-semibold text-center text-white">Tecnologías</h1>
+    <h1 class="text-5xl font-semibold text-center text-white">Techs</h1>
     <div class="mt-10" style="min-height: 160px">
       <swiper
         :slidesPerView="4"
@@ -24,7 +24,7 @@
                 {{ stack.name }}
               </span>
               <p class="font-light">
-                {{ stack.experience }} años de experiencia
+                {{ stack.experience }} years of experience
               </p>
             </div>
           </a>
