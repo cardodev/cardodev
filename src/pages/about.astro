@@ -1,9 +1,55 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import About from "../components/About.vue";
-import { Icon } from "@iconify/vue";
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="About">
-  <About client:load />
+  <div>
+    <div class="relative w-full">
+      <div class="absolute" style="left: 50%; bottom: 0">
+        <Icon name="emojione:glowing-star" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 55%">
+        <Icon name="fxemoji:rocket" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 45%; top: 40px">
+        <Icon name="fxemoji:rocket" width="40" height="40" />
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center justify-center w-2/4 gap-10 py-40 mx-auto text-center"
+    >
+      <h1 class="text-4xl font-semibold text-center text-white">
+        I like building digital products, here is my story
+      </h1>
+
+      <p class="text-lg font-extralight">
+        Hello, My name is <span class="font-semibold">Diego</span>, a Software
+        Developer based in Santiago, Chile. I enjoy building digital products
+        for internet and phones. My goal is to always build scalable products
+        and performant experiences.
+      </p>
+
+      <p>Here are a few technologies I've been working with recently:</p>
+
+      <ul class="w-full grid grid-cols-3 text-left gap-y-3">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>PHP</li>
+        <li>Vue</li>
+        <li>Node.js</li>
+        <li>NestJS</li>
+        <li>Laravel</li>
+      </ul>
+
+      <div
+        class="flex items-center justify-center my-10 text-lg font-semibold text-white"
+      >
+        BUILDING SOFTWARE WITH
+        <Icon class="mx-2 w-5" name="emojione-v1:heart-suit" /> FROM CHILE TO THE
+        WORLD
+      </div>
+    </div>
+  </div>
 </Layout>

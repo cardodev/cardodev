@@ -57,7 +57,7 @@
                 <li
                   v-for="feature in selectedJob.features"
                   :key="selectedJob.key"
-                  class="my-3"
+                  class="my-3 pl-4"
                 >
                   {{ feature }}
                 </li>
@@ -75,22 +75,29 @@ import { ref } from "vue";
 
 const jobs = [
   {
-    role: "Frontend Developer",
+    role: "Software Engineer",
     company: "Apside",
     key: "apside",
     companyWebsite: "https://apside.cl/",
     companyLogo: "/img/experience/apside.jpeg",
-    startDate: "Jul 2022",
-    endDate: "present",
-    features: [
-      "Desarrollo a través de prácticas ágiles (Scrum).",
-      "Desarrollo frontend con arquitectura microfrontend a través de la plataforma Modyo y el framework Vue.js.",
-      "Desarrollo en arquitectura de microservicios a través de patrón BFF con Python, FastAPI y NestJS.",
-      "Control de versiones con Git y Bitbucket.",
-    ],
+    startDate: "July 2022",
+    endDate: "Present",
+    features: [],
   },
+  // {
+  //   role: "Senior Full-stack Engineer",
+  //   company: "Prtal",
+  //   key: "prtal",
+  //   companyWebsite: "https://apside.cl/",
+  //   companyLogo: "/img/experience/apside.jpeg",
+  //   startDate: "Sep 2022",
+  //   endDate: "Present",
+  //   features: [
+  //     "Proposed and implemented scalable solutions to issues identified in the application.",
+  //   ],
+  // },
   {
-    role: "Full-stack Developer",
+    role: "Full-stack Engineer",
     company: "Pckz",
     key: "pckz",
     companyWebsite: "https://pckz.cl/",
@@ -98,11 +105,7 @@ const jobs = [
     startDate: "Ago 2021",
     endDate: "Jun 2022",
     features: [
-      "Desarrollador Full-stack de sistemas a medida para distintos clientes según requerimientos, en conjunto con equipo de UX/UI",
-      "Creación de interfaces de usuarios usando JavaScript, Vue.js/Nuxt.js, SSR, SPA",
-      "Creación de API REST con PHP / Laravel con integración con SPA en Vue.js/Nuxt.js",
-      "Implementación de sistemas de pago y envíos como Kushki y Shipit",
-      "Control de versiones con Git y Gitlab",
+      "Digital products with user experience designers and other developers to ensure thoughtful and efficient implementation of features.",
     ],
   },
 ];
@@ -111,3 +114,12 @@ const setSelectedJob = (job) => {
   selectedJob.value = job;
 };
 </script>
+
+<style scoped>
+li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: #6200ee;
+}
+</style>

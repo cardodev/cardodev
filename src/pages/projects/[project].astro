@@ -1,11 +1,11 @@
 ---
 export function getStaticPaths() {
-  return [{ params: { project: "ambar" } }, { params: { id: "smarthomy" } }];
+  return [{ params: { project: "ambar" } }, { params: { project: "smarthomy" } }];
 }
 
-const { project } = Astro.params;
+// const { project } = Astro.params;
 
-console.log({ project });
+// console.log({ project });
 
 import Layout from "../../layouts/Layout.astro";
 import ProjectDetail from "../../components/ProjectDetail.astro";

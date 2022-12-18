@@ -1,17 +1,30 @@
-<template>
+---
+import { Icon } from "astro-icon";
+---
+
+<div>
   <section class="hero_section" id="hero">
     <div class="grid grid-cols-2 py-40 mx-auto text-center">
       <div class="flex flex-col items-start justify-center gap-6">
+        <h1
+          class="text-7xl  flex justify-start items-start text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-purple-600"
+        >
+          I build web and mobile apps
+        </h1>
         <div class="flex gap-4">
           <h1>Software Engineer</h1>
           <h1>Full-stack Engineer</h1>
           <h1>Freelance</h1>
         </div>
         <p class="text-xl font-light text-left text-gray-300">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Exercitationem accusamus tenetur recusandae, ut sunt porro maxime
-          nesciunt fugiat aliquid, cumque autem dolores optio culpa omnis
-          assumenda repellendus dolorum rem mollitia!
+          I`m a software developer based in Santiago CL, specializing in build
+          (and occasionally designing) excepcional digital experiencies.
+          Currently, I´m focused on building accesible, user-friendly and
+          high-performing websites at <a
+            href="https://apside.cl/"
+            target="_blank"
+            class="text-blue-500">@Apside</a
+          >.
         </p>
         <div class="flex gap-5">
           <a
@@ -20,7 +33,7 @@
             class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-purple flex items-center bg-purple-hover"
           >
             <Icon
-              icon="system-uicons:file-download"
+              name="system-uicons:file-download"
               width="24px"
               class="mr-1"
             />
@@ -29,7 +42,7 @@
           <button
             class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-sky-600 flex items-center hover:bg-sky-700"
           >
-            <Icon icon="ic:round-work-outline" width="24px" class="mr-1" />
+            <Icon name="ic:round-work-outline" width="24px" class="mr-1" />
             Experience
           </button>
         </div>
@@ -48,65 +61,4 @@
       </div>
     </div>
   </section>
-</template>
-
-<script setup>
-import { Icon } from "@iconify/vue";
-</script>
-
-<style>
-.blinking-cursor {
-  color: white;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-@-ms-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #fff;
-  }
-}
-</style>
+</div>
