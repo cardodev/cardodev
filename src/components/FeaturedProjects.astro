@@ -1,25 +1,19 @@
-<template>
+---
+import { Icon } from "astro-icon";
+---
+
+<div class="mx-auto max-w-7xl">
   <section class="my-10">
-    <h1 class="text-5xl font-semibold text-center text-white">
-      Other Noteworthy
-      <span
-        class="flex justify-center text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600"
-      >
-        Projects.
-      </span>
+    <h1 class="text-4xl font-semibold text-center text-white">
+      Featured Projects.
     </h1>
 
     <div class="grid grid-cols-3 gap-10 my-10">
-      <div
-        v-for="project in projects.filter((p) => !p.featured)"
-        :key="project.key"
-        class="p-5 my-4 rounded-lg"
-        style="background: #19191a"
-      >
+      <div class="p-5 my-4 rounded-lg" style="background: #19191a">
         <div class="flex items-center justify-between">
           <div>
             <Icon
-              icon="akar-icons:folder"
+              name="akar-icons:folder"
               color="white"
               width="32"
               height="32"
@@ -28,7 +22,7 @@
           <div class="flex gap-3">
             <a class="cursor-pointer" target="__blank" href="">
               <Icon
-                icon="akar-icons:github-fill"
+                name="akar-icons:github-fill"
                 color="white"
                 width="32"
                 height="32"
@@ -36,7 +30,7 @@
             </a>
             <a class="cursor-pointer" target="__blank" href="">
               <Icon
-                icon="bx:link-external"
+                name="uil:external-link-alt"
                 color="white"
                 width="32"
                 height="32"
@@ -45,9 +39,7 @@
           </div>
         </div>
         <div class="my-4">
-          <span class="text-2xl font-semibold text-white">
-            {{ project.name }}
-          </span>
+          <span class="text-2xl font-semibold text-white"> svgx</span>
           <p class="my-2 text-gray-200 font-extralight">
             Beautiful and embeddable NFTs Gallery. Connect your wallets, create
             a NFTs gallery and share it everywhere.
@@ -93,10 +85,4 @@
       </div>
     </div>
   </section>
-</template>
-
-<script setup>
-import { projects } from "../data";
-import { computed } from "vue";
-import { Icon } from "@iconify/vue";
-</script>
+</div>

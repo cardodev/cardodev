@@ -1,18 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import Stack from "../components/Stack.vue";
-import Experience from "../components/Experience.vue";
-import FeaturedProjects from "../components/FeaturedProjects.vue";
-import OtherProjects from "../components/OtherProjects.vue";
-import Contact from "../components/Contact.vue";
+import FeaturedProjects from "../components/FeaturedProjects.astro";
+import Stack from "../components/vue/Stack.vue";
+
 ---
 
 <Layout title="Portafolio">
   <Hero />
   <Stack client:load />
-  <Experience client:load />
-  <!-- <FeaturedProjects client:load /> -->
-  <OtherProjects client:load />
-  <!-- <Contact /> -->
+  <FeaturedProjects />
 </Layout>

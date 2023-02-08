@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="text-5xl font-semibold text-center text-white">Techs</h1>
+    <h1 class="text-4xl font-semibold text-center text-white">Techs</h1>
     <div class="mt-10" style="min-height: 160px">
       <swiper
         :slidesPerView="4"
