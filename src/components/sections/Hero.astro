@@ -4,7 +4,7 @@ import { Icon } from "astro-icon";
 
 <div>
   <section class="hero_section" id="hero">
-    <div class="grid grid-cols-2 py-40 mx-auto text-center">
+    <div class="grid grid-cols-2 py-10 mx-auto text-center">
       <div class="flex flex-col items-start justify-center gap-6">
         <h1
           class="hero-title text-7xl flex justify-start items-start text-left font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-teal-400 to-purple-600"
@@ -16,7 +16,7 @@ import { Icon } from "astro-icon";
           <h1>Full-stack Engineer</h1>
           <h1>Freelance</h1>
         </div>
-        <p class="text-xl font-light text-left text-gray-300">
+        <p class="text-base text-neutral-700 dark:text-zinc-400 text-left">
           I`m a software developer based in Santiago CL, specializing in build
           (and occasionally designing) excepcional digital experiencies.
           Currently, I´m focused on building accesible, user-friendly and
@@ -26,26 +26,6 @@ import { Icon } from "astro-icon";
             class="text-blue-500">@Apside</a
           >.
         </p>
-        <div class="flex gap-5">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-purple flex items-center bg-purple-hover"
-          >
-            <Icon
-              name="system-uicons:file-download"
-              width="24px"
-              class="mr-1"
-            />
-            Curriculum
-          </a>
-          <button
-            class="cursor-pointer text-md text-white font-medium px-4 py-2 rounded-full bg-sky-600 flex items-center hover:bg-sky-700"
-          >
-            <Icon name="ic:round-work-outline" width="24px" class="mr-1" />
-            Experience
-          </button>
-        </div>
       </div>
       <div class="items-center justify-center hidden lg:flex">
         <img

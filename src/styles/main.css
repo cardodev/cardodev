@@ -87,7 +87,6 @@ body {
   /* background: url(../assets/fig-1.svg) center bottom / cover no-repeat; */
 }
 
-
 .bg-black {
   background-color: var(--vt-c-black);
 }
@@ -316,4 +315,43 @@ h1.hero-title {
   transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: fadeIn 0.4s cubic-bezier(0.28, 0.11, 0.32, 1);
   animation-fill-mode: backwards;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.card-base {
+  /* --tw-bg-opacity: 1;
+  --tw-bg-opacity: 0.25;
+  --tw-border-opacity: 1;
+  background-color: hsla(0, 0%, 96%, 0.25);
+  background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, var(--tw-border-opacity)); */
+  --tw-bg-opacity: 0.3;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 0.8;
+  background-color: rgba(38, 38, 38, 0.3);
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+  border-color: #262626;
+  border-color: rgba(38, 38, 38, var(--tw-border-opacity));
+  color: hsla(0, 0%, 100%, 0.8);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  border-width: 0.1px;
+  padding: 1rem;
+  transition-duration: 0.15s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .card-base {
+  --tw-bg-opacity: 0.3;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 0.8;
+  background-color: rgba(38, 38, 38, 0.3);
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+  border-color: #262626;
+  border-color: rgba(38, 38, 38, var(--tw-border-opacity));
+  color: hsla(0, 0%, 100%, 0.8);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
