@@ -1,6 +1,15 @@
+---
+const { position } = Astro.props;
+
+if (!position) {
+  Astro.props.position = "sticky";
+}
+
+console.log({ position });
+---
+
 <style>
   .header {
-    position: sticky;
     top: 0;
     background: var(--color-background);
     z-index: 999;
@@ -17,7 +26,12 @@
   }
 </style>
 
-<header class="header">
+<header
+  class:list={[
+    "header",
+    { sticky: position !== "relative", relative: position !== "sticky" },
+  ]}
+>
   <div class="header-content grid grid-cols-2 px-8 py-8 z-50">
     <div>
       <a href="/" class="text-lg font-semibold text-white">Diego Castillo</a>
