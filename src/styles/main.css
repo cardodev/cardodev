@@ -113,23 +113,7 @@ body {
   transition: opacity 0.1s ease-out;
 }
 
-/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  background: var(--color-background);
-  z-index: 1;
-}
 
-.header .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.2rem 0;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
 
 h1.hero-title {
   animation: glitch1 2.5s infinite;
