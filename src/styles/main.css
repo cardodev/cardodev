@@ -113,8 +113,6 @@ body {
   transition: opacity 0.1s ease-out;
 }
 
-
-
 h1.hero-title {
   animation: glitch1 2.5s infinite;
 }
@@ -293,6 +291,17 @@ h1.hero-title {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.project_access {
+  text-decoration: none;
+  color: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .project_thumbnail {

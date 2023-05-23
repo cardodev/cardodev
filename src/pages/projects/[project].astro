@@ -1,19 +1,21 @@
 ---
+import ProjectDetail from "../../components/projects/ProjectDetail.astro";
+import projects from "../../data/projects.json";
+
 export function getStaticPaths() {
   return [
-    { params: { project: "ambar" } },
+    { params: { project: "ambar-pet" } },
     { params: { project: "smarthomy" } },
   ];
 }
 
-import ProjectDetail from "../../components/projects/ProjectDetail.astro";
 const { project } = Astro.params;
 
-console.log({ project });
+const currentProject = projects.find((p: any) => p.slug === project);
 
 import Layout from "../../layouts/Layout.astro";
 ---
 
 <Layout title="" headerPosition="relative">
-  <ProjectDetail />
+  <ProjectDetail project={currentProject} />
 </Layout>
