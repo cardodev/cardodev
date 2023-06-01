@@ -1,10 +1,12 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import ProjectGrid from "../../components/ProjectGrid.astro";
+import ProjectGrid from "../../components/projects/ProjectGrid.astro";
+
+import projects from "../../data/projects.json";
 ---
 
 <Layout title="About">
   <div>
-    <ProjectGrid />
+    <ProjectGrid projects={projects} />
   </div>
 </Layout>

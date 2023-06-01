@@ -113,24 +113,6 @@ body {
   transition: opacity 0.1s ease-out;
 }
 
-/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  background: var(--color-background);
-  z-index: 1;
-}
-
-.header .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.2rem 0;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 h1.hero-title {
   animation: glitch1 2.5s infinite;
 }
@@ -311,8 +293,76 @@ h1.hero-title {
   }
 }
 
+.project_access {
+  text-decoration: none;
+  color: unset;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .project_thumbnail {
   transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: fadeIn 0.4s cubic-bezier(0.28, 0.11, 0.32, 1);
   animation-fill-mode: backwards;
+}
+.project_thumbnail .project_artwork {
+  --radius: 8px;
+  position: relative;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  background: #efeff4;
+  /* padding: 75% 0 0; */
+  border-radius: var(--radius);
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  -webkit-mask-box-image: url(
+      data:image/svg + xml;utf8,
+      <svgwidth="100"height="100"viewBox="0 0 100 100"fill="none"xmlns="http://www.w3.org/2000/svg"><pathd="M0 25.6C0 16.6392 0 12.1587 1.7439 8.73615C3.27787 5.72556 5.72556 3.27787 8.73615 1.7439C12.1587 0 16.6392 0 25.6 0H74.4C83.3608 0 87.8413 0 91.2638 1.7439C94.2744 3.27787 96.7221 5.72556 98.2561 8.73615C100 12.1587 100 16.6392 100 25.6V74.4C100 83.3608 100 87.8413 98.2561 91.2638C96.7221 94.2744 94.2744 96.7221 91.2638 98.2561C87.8413 100 83.3608 100 74.4 100H25.6C16.6392 100 12.1587 100 8.73615 98.2561C5.72556 96.7221 3.27787 94.2744 1.7439 91.2638C0 87.8413 0 83.3608 0 74.4V25.6Z"fill="black"/></svg>
+    )
+    16 / var(--radius) / 0;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.card-base {
+  /* --tw-bg-opacity: 1;
+  --tw-bg-opacity: 0.25;
+  --tw-border-opacity: 1;
+  background-color: hsla(0, 0%, 96%, 0.25);
+  background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  border-color: #e5e5e5;
+  border-color: rgba(229, 229, 229, var(--tw-border-opacity)); */
+  --tw-bg-opacity: 0.3;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 0.8;
+  background-color: rgba(38, 38, 38, 0.3); /* #262626 */
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+  border-color: #262626;
+  border-color: rgba(38, 38, 38, var(--tw-border-opacity));
+  color: hsla(0, 0%, 100%, 0.8);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  border-width: 0.1px;
+  padding: 1rem;
+  transition-duration: 0.15s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark .card-base {
+  --tw-bg-opacity: 0.3;
+  --tw-border-opacity: 1;
+  --tw-text-opacity: 0.8;
+  background-color: rgba(38, 38, 38, 0.3);
+  background-color: rgba(38, 38, 38, var(--tw-bg-opacity));
+  border-color: #262626;
+  border-color: rgba(38, 38, 38, var(--tw-border-opacity));
+  color: hsla(0, 0%, 100%, 0.8);
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }

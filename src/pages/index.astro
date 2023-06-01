@@ -1,14 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
-import OtherProjects from "../components/OtherProjects.astro";
-import Stack from "../components/vue/Stack.vue";
-import ProjectGrid from "../components/ProjectGrid.astro";
+import Hero from "../components/sections/Hero.astro";
+import Pages from "../components/sections/Pages.astro";
+import Me from "../components/sections/Me.astro";
+import Experience from "../components/sections/Experience.astro";
+import Education from "../components/sections/Ecucation.astro";
+import Technologies from "../components/sections/Technologies.astro";
 ---
 
 <Layout title="Portafolio">
   <Hero />
-  <Stack client:load />
+  <Pages />
+  <Me />
+  <div class="grid grid-cols-2 gap-4 my-5">
+    <Experience />
+    <Education />
+  </div>
+  <Technologies />
+
+  <!-- <Stack client:load /> -->
   <!-- <ProjectGrid /> -->
-  <OtherProjects />
+  <!-- <OtherProjects /> -->
 </Layout>

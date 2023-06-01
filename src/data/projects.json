@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ambar-pet",
+    "slug": "ambar-pet",
+    "name": "Ambar.pet",
+    "title": "Ambar.pet - Veterinary management system",
+    "description": "",
+    "url": "https://ambar.pet",
+    "detail_url": "/projects/ambar-pet",
+    "full_image": {
+      "src": "/projects/ambar-pet/full.png",
+      "alt": "Ambar.pet - Veterinary management system"
+    },
+    "images": [
+      {
+        "src": "/projects/ambar-pet/3.png",
+        "alt": "Ambar.pet - Veterinary management system"
+      },
+      {
+        "src": "/projects/ambar-pet/4.png",
+        "alt": "Ambar.pet - Veterinary management system"
+      }
+    ],
+    "team": [
+      { "name": "Pedro Ojeda", "role": "CTO Pckz" },
+      { "name": "Jesus Alpino", "role": "CTO Ambar.pet" }
+    ],
+    "release_date": "December 2021"
+  }
+]

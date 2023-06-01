@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Repositories">
+  <main>
+    <div>
+      <header class="space-y-2 my-12">
+        <h1 class="text-black/90 dark:text-white/90 text-4xl font-semibold">
+          Repositories
+        </h1>
+        <p>My public projects on GitHub / GitLab.</p>
+      </header>
+      <div class="grid gap-4 md:grid-cols-2">
+        <a href="">
+          <div class="rounded-lg card-base">
+            <div class="space-y-2">
+              <div class="flex justify-between space-x-2">
+                <h3
+                  class="text-black/90 dark:text-white/90 items-center truncate space-x-1"
+                >
+                  <span class="text-black/50 dark:text-white/30">dcgx/</span>
+                  <span>website</span>
+                </h3>
+              </div>
+              <p class="text-black/50 dark:text-white/30 line-clamp-2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo
+                inventore aliquam, accusamus enim dolorum blanditiis recusandae
+                minus dolorem eum corporis adipisci impedit commodi earum
+                perspiciatis obcaecati provident accusantium incidunt
+                reiciendis.
+              </p>
+            </div>
+
+            <div class="mt-4">
+              <div
+                class="flex items-center justify-between text-black/50 dark:text-white/30"
+              >
+                <span> Stars:</span>
+                <span> 0</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-black/50 dark:text-white/30"
+              >
+                <span> Language:</span>
+                <span> v</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
