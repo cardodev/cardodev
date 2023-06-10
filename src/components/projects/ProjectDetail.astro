@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon";
 const { project } = Astro.props;
 
 console.log({ project }, "detail");
@@ -25,6 +26,39 @@ console.log({ project }, "detail");
         style="background-color: #262626;"
         href="">About Ambar.pet</a
       >
+
+      <div class="grid grid-cols-2 gap-x-2 gap-y-2 mt-5">
+        {
+          project.technologies &&
+            project.technologies.map((technology: any) => (
+              <div class="card-base rounded-lg flex items-center space-x-4">
+                <div class="rounded-lg flex">
+                  <Icon name={technology.icon} width="20" height="20" />
+                </div>
+                <span class="flex-1 truncate text-sm">{technology.label}</span>
+              </div>
+            ))
+        }
+      </div>
+
+      <!-- {
+        project.technologies &&
+
+             <div class="grid grid-cols-2 gap-x-2 gap-y-2 mt-5">
+             {}
+            </div>
+          // project.technologies.map((technology: any) => (
+          //   <div class="grid grid-cols-2 gap-x-2 gap-y-2 mt-5">
+          //     <div class="card-base rounded-lg flex items-center space-x-4">
+          //       <div class="rounded-lg flex">
+          //         <Icon name={technology.icon} width="20" height="20" />
+          //       </div>
+          //       <span class="flex-1 truncate text-sm">{technology.label}</span>
+          //     </div>
+          //   </div>
+          // ))
+      } -->
+
       <div class="grid grid-cols-2 gap-10 mt-8">
         {
           project.release_date && (

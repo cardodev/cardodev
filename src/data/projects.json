@@ -25,6 +25,57 @@
       { "name": "Pedro Ojeda", "role": "CTO Pckz" },
       { "name": "Jesus Alpino", "role": "CTO Ambar.pet" }
     ],
+    "technologies": [
+      { "key": "javascript", "label": "JavaScript", "icon": "logos:javascript" },
+      { "key": "vue.js", "label": "Vue.js", "icon": "logos:vue" },
+      { "key": "firebase", "label": "Firebase", "icon": "logos:firebase" }
+    ],
+    "is_active": false,
     "release_date": "December 2021"
+  },
+
+  {
+    "id": "gestor-formulario",
+    "slug": "app-registro-aguas",
+    "name": "App Registro Aguas",
+    "title": "Gestor de Formularios",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/app-registro-flotas",
+    "full_image": {
+      "src": "/projects/app-registro-flotas/full.png",
+      "alt": "App Registro Aguas"
+    }
+  },
+
+
+  {
+    "id": "app-registro-flotas",
+    "slug": "app-registro-flotas",
+    "name": "App Registro Flotas",
+    "title": "App Registro Flotas - Fleet management app",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/app-registro-flotas",
+    "full_image": {
+      "src": "/projects/app-registro-flotas/full.png",
+      "alt": "App Registro Flotas - Fleet management app"
+    }
+  },
+
+  {
+    "id": "app-registro-aguas",
+    "slug": "app-registro-aguas",
+    "name": "App Registro Aguas",
+    "title": "App Registro Aguas",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/app-registro-flotas",
+    "full_image": {
+      "src": "/projects/app-registro-flotas/full.png",
+      "alt": "App Registro Aguas"
+    }
   }
+
+  
 ]
