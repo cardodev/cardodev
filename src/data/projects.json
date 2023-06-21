@@ -1,81 +1,130 @@
 [
-  {
-    "id": "ambar-pet",
-    "slug": "ambar-pet",
-    "name": "Ambar.pet",
-    "title": "Ambar.pet - Veterinary management system",
-    "description": "",
-    "url": "https://ambar.pet",
-    "detail_url": "/projects/ambar-pet",
-    "full_image": {
-      "src": "/projects/ambar-pet/full.png",
-      "alt": "Ambar.pet - Veterinary management system"
-    },
-    "images": [
-      {
-        "src": "/projects/ambar-pet/3.png",
-        "alt": "Ambar.pet - Veterinary management system"
-      },
-      {
-        "src": "/projects/ambar-pet/4.png",
-        "alt": "Ambar.pet - Veterinary management system"
-      }
-    ],
-    "team": [
-      { "name": "Pedro Ojeda", "role": "CTO Pckz" },
-      { "name": "Jesus Alpino", "role": "CTO Ambar.pet" }
-    ],
-    "technologies": [
-      { "key": "javascript", "label": "JavaScript", "icon": "logos:javascript" },
-      { "key": "vue.js", "label": "Vue.js", "icon": "logos:vue" },
-      { "key": "firebase", "label": "Firebase", "icon": "logos:firebase" }
-    ],
-    "is_active": false,
-    "release_date": "December 2021"
-  },
 
   {
-    "id": "gestor-formulario",
-    "slug": "app-registro-aguas",
-    "name": "App Registro Aguas",
-    "title": "Gestor de Formularios",
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link",
+    "title": "Profiler Dev",
     "description": "",
     "url": "",
-    "detail_url": "/projects/app-registro-flotas",
+    "detail_url": "/projects/any",
     "full_image": {
-      "src": "/projects/app-registro-flotas/full.png",
-      "alt": "App Registro Aguas"
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
     }
   },
 
 
   {
-    "id": "app-registro-flotas",
-    "slug": "app-registro-flotas",
-    "name": "App Registro Flotas",
-    "title": "App Registro Flotas - Fleet management app",
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link",
+    "title": "Foxbel",
     "description": "",
     "url": "",
-    "detail_url": "/projects/app-registro-flotas",
+    "detail_url": "/projects/any",
     "full_image": {
-      "src": "/projects/app-registro-flotas/full.png",
-      "alt": "App Registro Flotas - Fleet management app"
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
     }
   },
 
   {
-    "id": "app-registro-aguas",
-    "slug": "app-registro-aguas",
-    "name": "App Registro Aguas",
-    "title": "App Registro Aguas",
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link",
+    "title": "API OrgChile",
     "description": "",
     "url": "",
-    "detail_url": "/projects/app-registro-flotas",
+    "detail_url": "/projects/any",
     "full_image": {
-      "src": "/projects/app-registro-flotas/full.png",
-      "alt": "App Registro Aguas"
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "README Project Generator",
+    "title": "README Project Generator",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link",
+    "title": "Dcgx Link",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+  
+  
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link", 
+    "title": "Rífalo", 
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link", 
+    "title": "DummyLogo Maker", 
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link", 
+    "title": "Registro de Flotas - Anglo American", 
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
+    }
+  },
+
+  {
+    "id": "readme-project-generator",
+    "slug": "readme-project-generator",
+    "name": "dcgx.link", 
+    "title": "Adopta.me", 
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "full_image": {
+      "src": "/projects/any/full.png",
+      "alt": "README Project Generator"
     }
   }
-
-  
 ]
