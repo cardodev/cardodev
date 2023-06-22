@@ -16,15 +16,16 @@ console.log({ project }, "detail");
     </div>
     <div class="project-detail">
       <h1 class="my-5 text-4xl font-semibold text-left text-white">
-        Ambar.pet
+        {project.name}
       </h1>
       <p class="my-4 text-md text-left">
-        {project.description}
+        {project.finished_at.duration}
       </p>
       <a
         class="py-2 px-4 rounded-full cursor-pointer"
         style="background-color: #262626;"
-        href="">About Ambar.pet</a
+        target="_blank"
+        href={project.url}>About {project.name}</a
       >
 
       <div class="grid grid-cols-2 gap-x-2 gap-y-2 mt-5">
@@ -77,11 +78,17 @@ console.log({ project }, "detail");
                 Team
               </span>
               {project.team.map((teamMember: any) => {
-                <span class="text-white">{teamMember.name}</span>;
+                <span class="text-white">{teamMember.name}</span>
               })}
             </div>
           )
         }
+      </div>
+
+      <div class="my-8">
+        <p>
+          {project.description}
+        </p>
       </div>
     </div>
   </div>

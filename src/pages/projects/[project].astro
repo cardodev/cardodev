@@ -4,13 +4,15 @@ import projects from "../../data/projects.json";
 
 export function getStaticPaths() {
   return [
-    { params: { project: "ambar-pet" } },
+    { params: { project: "prtal" } },
   ];
 }
 
 const { project } = Astro.params;
 
 const currentProject = projects.find((p: any) => p.slug === project);
+
+console.log({currentProject})
 
 import Layout from "../../layouts/Layout.astro";
 ---
