@@ -57,9 +57,10 @@
       "duration": "2021"
     },
     "full_image": {
-      "src": "https://www.portaldeclientes.cl/wp-content/uploads/2023/03/Captura-de-Pantalla-2023-01-25-a-las-17.26.32-5-1024x650.png",
-      "alt": "SGC BG"
-    }
+      "src": "/projects/sgc/full.png",
+      "alt": "sgc"
+    },
+    "images": []
   },
   {
     "id": "app-flotas",
