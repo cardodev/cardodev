@@ -46,6 +46,31 @@
     ]
   },
   {
+    "id": "ambar-pet",
+    "slug": "ambar-pet",
+    "name": "ambar-pet",
+    "title": "Administrador de veterinarias",
+    "description": "From 2021 - 2022, I worked on this project as a senior developer.",
+    "url": "https://www.app.ambar.pet",
+    "detail_url": "/projects/ambar-pet",
+    "finished_at": {
+      "duration": "2022 - 2023"
+    },
+    "full_image": {
+      "src": "/projects/ambar-pet/full.png",
+      "alt": "ambar-pet"
+    },
+    "images": [],
+    "team": [
+      {
+        "name": "Pedro Ojeda"
+      },
+      {
+        "name": "Lorenzo"
+      }
+    ]
+  },
+  {
     "id": "sgc",
     "slug": "sgc",
     "name": "dcgx.link",
