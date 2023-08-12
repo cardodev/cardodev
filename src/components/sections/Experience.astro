@@ -12,7 +12,9 @@ import { Icon } from "astro-icon";
     class="rounded-lg card-base bg-gray-900 overflow-x-hidden transition-colors p-4 cursor-pointer"
   >
     <ol class="mt-6 space-y-5">
-      <li class="flex gap-4">
+      <li class="flex gap-4" onclick="
+      myModal.showModal()
+      ">
         <div
           class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
         >
@@ -57,9 +59,32 @@ import { Icon } from "astro-icon";
           </div>
         </div>
       </li>
+
+      <li class="flex gap-4">
+        <div
+          class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+        >
+          <img src="/logos/pckz.gif" />
+        </div>
+        <div class="flex flex-wrap flex-auto gap-x-2">
+          <h5
+            class="flex-none w-full text-sm font-medium text-neutral-900 dark:text-white"
+          >
+            Ango American
+          </h5>
+          <h6 class="text-xs text-neutral-700 dark:text-zinc-300">
+            Fullstack Engineer
+          </h6>
+          <div class="ml-auto text-xs text-neutral-700 dark:text-zinc-300">
+            <time datetime="2021">2021</time>
+            <span>-</span>
+            <time datetime="2023">2022</time>
+          </div>
+        </div>
+      </li>
     </ol>
 
-    <div class="flex items-center justify-start mt-8 gap-3">
+    <!-- <div class="flex items-center justify-start mt-8 gap-3">
       <a
         href="https://read.cv/dcgx"
         target="_blank"
@@ -76,6 +101,100 @@ import { Icon } from "astro-icon";
         <Icon name="ic:round-work-outline" width="24px" class="mr-1" />
         Descargar cv
       </a>
-    </div>
+    </div> -->
   </div>
+
+  <h3
+    class="text-sm text-black/70 dark:text-white/50 my-3 font-medium uppercase"
+  >
+    Freelance
+  </h3>
+  <div
+    class="rounded-lg card-base bg-gray-900 overflow-x-hidden transition-colors p-4 cursor-pointer"
+  >
+    <ol class="mt-6 space-y-5">
+      <li class="flex gap-4">
+        <div
+          class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+        >
+          <img src="/logos/apside.jpeg" />
+        </div>
+        <div class="flex flex-wrap flex-auto gap-x-2">
+          <h5
+            class="flex-none w-full text-sm font-medium text-neutral-900 dark:text-white"
+          >
+            Synapssis Technologies
+          </h5>
+          <h6 class="text-xs text-neutral-700 dark:text-zinc-300">
+            Software Engineer
+          </h6>
+          <div class="ml-auto text-xs text-neutral-700 dark:text-zinc-300">
+            <time datetime="2021">2022</time>
+            <span>-</span>
+            <time datetime="2023">Present</time>
+          </div>
+        </div>
+      </li>
+
+      <li class="flex gap-4">
+        <div
+          class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+        >
+          <img src="/logos/pckz.gif" />
+        </div>
+        <div class="flex flex-wrap flex-auto gap-x-2">
+          <h5
+            class="flex-none w-full text-sm font-medium text-neutral-900 dark:text-white"
+          >
+            Prtal
+          </h5>
+          <h6 class="text-xs text-neutral-700 dark:text-zinc-300">
+            Fullstack Engineer
+          </h6>
+          <div class="ml-auto text-xs text-neutral-700 dark:text-zinc-300">
+            <time datetime="2021">2021</time>
+            <span>-</span>
+            <time datetime="2023">2022</time>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+
+  <dialog id="myModal" class="modal">
+    <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+      <h3 class="font-bold text-lg">Apside</h3>
+      <a href="https://apside.cl/" target="_blank">apside.cl</a>
+      <p class="py-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aspernatur
+        voluptas quam animi nam? Ratione, distinctio, dolores perferendis
+        temporibus tempora blanditiis, ab sequi iure velit veritatis numquam!
+        Corporis, enim quaerat.
+      </p>
+      <h3>Mi experiencia</h3>
+      <ul>
+        <li>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex
+          fugiat exercitationem at doloribus, enim numquam maiores eligendi
+          fugit? Reprehenderit eaque pariatur numquam eum laborum. Numquam
+          impedit quam ea labore.
+        </li>
+        <li>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex
+          fugiat exercitationem at doloribus, enim numquam maiores eligendi
+          fugit? Reprehenderit eaque pariatur numquam eum laborum. Numquam
+          impedit quam ea labore.
+        </li>
+        <li>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi ex
+          fugiat exercitationem at doloribus, enim numquam maiores eligendi
+          fugit? Reprehenderit eaque pariatur numquam eum laborum. Numquam
+          impedit quam ea labore.
+        </li>
+      </ul>
+    </form>
+    <form method="dialog" class="modal-backdrop">
+      <button>close</button>
+    </form>
+  </dialog>
 </section>
