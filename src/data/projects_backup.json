@@ -1,0 +1,106 @@
+[
+  {
+    "id": "gestor-proyectos",
+    "slug": "gestor-proyectos",
+    "name": "dcgx.link",
+    "title": "Gestor de Proyectos",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2023"
+    },
+    "full_image": {
+      "src": "/projects/gestor-proyectos/full.png",
+      "alt": "Gestor Proyecto BG"
+    }
+  },
+  {
+    "id": "prtal",
+    "slug": "prtal",
+    "name": "prtal",
+    "title": "Administrador de propuestas de clientes",
+    "description": "From 2022 - 2023, I worked on this project as a senior developer.",
+    "url": "https://www.prtal.app",
+    "detail_url": "/projects/prtal",
+    "finished_at": {
+      "duration": "2022 - 2023"
+    },
+    "full_image": {
+      "src": "/projects/prtal/full.png",
+      "alt": "prtal"
+    },
+    "images": [
+      {
+        "src": "/projects/prtal/1.png",
+        "alt": "prtal-1"
+      }
+    ],
+    "team": [
+      {
+        "name": "Pedro Ojeda"
+      },
+      {
+        "name": "Lorenzo"
+      }
+    ]
+  },
+  {
+    "id": "ambar-pet",
+    "slug": "ambar-pet",
+    "name": "ambar-pet",
+    "title": "Administrador de veterinarias",
+    "description": "From 2021 - 2022, I worked on this project as a senior developer.",
+    "url": "https://www.app.ambar.pet",
+    "detail_url": "/projects/ambar-pet",
+    "finished_at": {
+      "duration": "2022 - 2023"
+    },
+    "full_image": {
+      "src": "/projects/ambar-pet/full.png",
+      "alt": "ambar-pet"
+    },
+    "images": [],
+    "team": [
+      {
+        "name": "Pedro Ojeda"
+      },
+      {
+        "name": "Lorenzo"
+      }
+    ]
+  },
+  {
+    "id": "sgc",
+    "slug": "sgc",
+    "name": "dcgx.link",
+    "title": "Sistema de Gestión de Calidad",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2021"
+    },
+    "full_image": {
+      "src": "/projects/sgc/full.png",
+      "alt": "sgc"
+    },
+    "images": []
+  },
+  {
+    "id": "app-flotas",
+    "slug": "app-flotas",
+    "name": "dcgx.link",
+    "title": "Registro de Flotas de Camionetas",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2020"
+    },
+    "full_image": {
+      "src": "https://www.portaldeclientes.cl/wp-content/uploads/2023/03/Captura-de-Pantalla-2023-01-25-a-las-17.26.32-5-1024x650.png",
+      "alt": "README Project Generator"
+    }
+  }
+]
