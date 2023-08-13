@@ -7,102 +7,79 @@ interface Props {
   techs: string[];
 }
 
+import ExperienceDetail from "../experience/ExperienceDetail.astro";
 import { Icon } from "astro-icon";
 
-const { companyName, companyDescription, companyUrl, companyLogo, techs } = Astro.props;
+const { companyName, companyDescription, companyUrl, companyLogo, techs } =
+  Astro.props;
 
 const defaultTechs = {
-    typescript: {
-        name: "TypeScript",
-        icon: "logos:typescript-icon",
-        url: "https://www.typescriptlang.org/",
-    },
-    vue: {
-        name: "Vue.js",
-        icon: "logos:vue",
-        url: "https://vuejs.org/",
-    }
-}
+  typescript: {
+    name: "TypeScript",
+    icon: "logos:typescript-icon",
+    url: "https://www.typescriptlang.org/",
+  },
+  vue: {
+    name: "Vue.js",
+    icon: "logos:vue",
+    url: "https://vuejs.org/",
+  },
+};
 
 const techsIcons = techs.map((tech) => {
-    const techData = defaultTechs[tech];
-    return {
-        name: techData.name,
-        icon: techData.icon,
-        url: techData.url,
-    }
-})
+  const techData = defaultTechs[tech];
+  return {
+    name: techData.name,
+    icon: techData.icon,
+    url: techData.url,
+  };
+});
 
 const modalId = "modal" + companyName.replace(/\s/g, "");
 ---
 
 <dialog id={modalId} class="modal">
-    <form method="dialog" class="modal-box w-11/12 max-w-5xl px-10">
-        <div class="flex flex-col items-center justify-center">
-        <img src={'/logos/' + companyLogo} width="120px" class="rounded-lg" />
-        <h3 class="font-bold text-2xl text-white text-center py-3">{companyName}</h3>
-        <a
-            class="text-center text-blue-400 hover:text-blue-600"
-            href={companyUrl}
-            target="_blank">{companyUrl.replace('https://','').replace('/','')}</a
-        >
-        </div>
+  <form method="dialog" class="modal-box w-11/12 max-w-5xl px-10">
+    <div class="flex flex-col items-center justify-center">
+      <img src={"/logos/" + companyLogo} width="120px" class="rounded-lg" />
+      <h3 class="font-bold text-2xl text-white text-center py-3">
+        {companyName}
+      </h3>
+      <a
+        class="text-center text-blue-400 hover:text-blue-600"
+        href={companyUrl}
+        target="_blank">{companyUrl.replace("https://", "").replace("/", "")}</a
+      >
+    </div>
 
-        <p class="py-4">
-        {companyDescription}
-        </p>
-        <h4 class="font-bold text-xl text-white text-center py-3">
-        Mi Experiencia
-        </h4>
-        <ul class="list-disc">
-        <li>
-            Mejoré y desarrollé nuevas funcionalidades en varios micro frontends
-            utilizando Vue.js y utilizando Vuex para administrar el estado de la
-            aplicación y Axios para realizar solicitudes a la API, garantizando la
-            escalabilidad y el rendimiento de distintos sistemas de un cliente
-            bancario.
-        </li>
-        <li>
-            Implementé diseños de interfaces de usuario en colaboración con el
-            equipo de diseño, utilizando componentes reutilizables y técnicas de
-            diseño responsive, para garantizar una interfaz visualmente atractiva
-            y fácil de usar.
-        </li>
-        <li>
-            Desarrollé y mejoré proyectos basados en arquitectura de microservicio
-            y BFF con Python y NestJS.
-        </li>
-        <li>
-            Desarrollé nuevas características para sistemas de cliente banco
-            chileno construido en Angular y AngularJS
-        </li>
-        <li>
-            Mantenimiento de distintos microservicios Java y Python con Legacy
-            Code e implementación de nuevas características.
-        </li>
-        </ul>
-        <h4 class="font-bold text-xl text-white text-center py-3">
-        Tecnologías utilizadas
-        </h4>
-        <div class="flex gap-4">
-            {
-                techsIcons.map((tech) => {
-                    return (
-                        <a
-                            target="_blank"
-                            href={tech.url}
-                            class="tooltip"
-                            data-tip={tech.name}
-                        >
-                            <Icon name={tech.icon} width="40" height="40" />
-                        </a>
-                    )
-                })
-            }
-        </a>
-        </div>
-    </form>
-    <form method="dialog" class="modal-backdrop">
-        <button>close</button>
-    </form>
+    <p class="py-4">
+      {companyDescription}
+    </p>
+    <h4 class="font-bold text-xl text-white text-center py-3">
+      Mi Experiencia
+    </h4>
+    <ExperienceDetail company="pckz"/>
+    <h4 class="font-bold text-xl text-white text-center py-3">
+      Tecnologías utilizadas
+    </h4>
+    <div class="flex gap-4">
+      {
+        techsIcons.map((tech) => {
+          return (
+            <a
+              target="_blank"
+              href={tech.url}
+              class="tooltip"
+              data-tip={tech.name}
+            >
+              <Icon name={tech.icon} width="40" height="40" />
+            </a>
+          );
+        })
+      }
+    </div>
+  </form>
 </dialog>
+<form method="dialog" class="modal-backdrop">
+  <button>close</button>
+</form>
