@@ -1,4 +1,5 @@
 ---
+import i18next, { t } from "i18next";
 import Header from "../components/Header.astro";
 import ContactInfoAside from "../components/vue/ContactInfoAside.vue";
 import SocialMediaAside from "../components/vue/SocialMediaAside.vue";
@@ -13,19 +14,20 @@ const { title, headerPosition } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <!-- <meta http-equiv="refresh" content="0;url=/es/" /> -->
     <title>{title}</title>
   </head>
   <body>
     <!-- <SocialMediaAside client:load /> -->
     <!-- <ContactInfoAside client:load /> -->
     <div class="py-4 border border-gray-800">
-      <div class="mx-auto max-w-7xl">🚧 Website under construction.</div>
+      <div class="mx-auto max-w-7xl">🚧 {t("header.ex")}</div>
     </div>
     <Header position={headerPosition} />
     <main class="main-content">
