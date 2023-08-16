@@ -31,7 +31,7 @@ const modalId = "modal" + companyName.replace(/\s/g, "");
       >✕</button
     >
     <div class="flex flex-col items-center justify-center">
-      <img src={"/logos/" + companyLogo} width="120px" class="rounded-lg" />
+      <img src={"/img/logos/" + companyLogo} width="120px" class="rounded-lg" />
       <h3 class="font-bold text-2xl text-white text-center py-3">
         {companyName}
       </h3>
@@ -75,14 +75,14 @@ const modalId = "modal" + companyName.replace(/\s/g, "");
       }
     </div>
 
-    <div class="carousel rounded-box">
+    <div class="carousel rounded-box gap-5 mt-10">
       {
-        carousel.map((carouselItem) => {
+        carousel.map((carouselItem: any) => {
           return (
-            <div class="carousel-item">
+            <div class="carousel-item max-w-[600px]">
               <img
-                src="/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-                alt="Burger"
+                src={carouselItem.src}
+                alt={carouselItem.alt}
               />
             </div>
           );

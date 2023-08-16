@@ -26,7 +26,9 @@
       "Mantenimiento y creación de nuevas aplicaciones y sitios web en PHP y Laravel, manejo de base de datos MySQL y PostgreSQL"
     ],
     "techs": ["javascript", "php", "vue", "laravel", "aws"],
-    "carousel": [{ "src": "", "alt": "" }]
+    "carousel": [
+      { "src": "/img/experience/pckz/ambar-pet1.png", "alt": "AmbarPet" }
+    ]
   },
   "anglo_american": {
     "detail": [
@@ -35,6 +37,8 @@
       "Manejo intermedio de azure y despliegue"
     ],
     "techs": ["c_sharp", "typescript", ".net", "angular", "wpf", "azure"],
-    "carousel": [{ "src": "", "alt": "" }]
+    "carousel": [
+      { "src": "/img/experience/angloamerican/sgc1.png", "alt": "SGC" }
+    ]
   }
 }
