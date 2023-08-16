@@ -1,106 +1,157 @@
 [
   {
-    "id": "gestor-proyectos",
-    "slug": "gestor-proyectos",
-    "name": "dcgx.link",
-    "title": "Gestor de Proyectos",
+    "id": "citame",
+    "slug": "citame",
+    "name": "Citame",
+    "title": "citame",
     "description": "",
     "url": "",
     "detail_url": "/projects/any",
+    "repository_host": "github.com",
+    "repository_url": "https://github.com/dcgx/citame",
     "finished_at": {
       "duration": "2023"
     },
     "full_image": {
-      "src": "/projects/gestor-proyectos/full.png",
-      "alt": "Gestor Proyecto BG"
-    }
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": ["ruby", "ruby-on-rails", "vuejs", "typescript"]
   },
   {
-    "id": "prtal",
-    "slug": "prtal",
-    "name": "prtal",
-    "title": "Administrador de propuestas de clientes",
-    "description": "From 2022 - 2023, I worked on this project as a senior developer.",
-    "url": "https://www.prtal.app",
-    "detail_url": "/projects/prtal",
-    "finished_at": {
-      "duration": "2022 - 2023"
-    },
-    "full_image": {
-      "src": "/projects/prtal/full.png",
-      "alt": "prtal"
-    },
-    "images": [
-      {
-        "src": "/projects/prtal/1.png",
-        "alt": "prtal-1"
-      }
-    ],
-    "team": [
-      {
-        "name": "Pedro Ojeda"
-      },
-      {
-        "name": "Lorenzo"
-      }
-    ]
-  },
-  {
-    "id": "ambar-pet",
-    "slug": "ambar-pet",
-    "name": "ambar-pet",
-    "title": "Administrador de veterinarias",
-    "description": "From 2021 - 2022, I worked on this project as a senior developer.",
-    "url": "https://www.app.ambar.pet",
-    "detail_url": "/projects/ambar-pet",
-    "finished_at": {
-      "duration": "2022 - 2023"
-    },
-    "full_image": {
-      "src": "/projects/ambar-pet/full.png",
-      "alt": "ambar-pet"
-    },
-    "images": [],
-    "team": [
-      {
-        "name": "Pedro Ojeda"
-      },
-      {
-        "name": "Lorenzo"
-      }
-    ]
-  },
-  {
-    "id": "sgc",
-    "slug": "sgc",
-    "name": "dcgx.link",
-    "title": "Sistema de Gestión de Calidad",
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "Revolut",
+    "title": "Revolut",
     "description": "",
     "url": "",
     "detail_url": "/projects/any",
     "finished_at": {
-      "duration": "2021"
+      "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/sgc/full.png",
-      "alt": "sgc"
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
     },
-    "images": []
+    "techs": []
   },
   {
-    "id": "app-flotas",
-    "slug": "app-flotas",
-    "name": "dcgx.link",
-    "title": "Registro de Flotas de Camionetas",
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "API Geo",
     "description": "",
     "url": "",
     "detail_url": "/projects/any",
     "finished_at": {
-      "duration": "2020"
+      "duration": "2022"
     },
     "full_image": {
-      "src": "https://www.portaldeclientes.cl/wp-content/uploads/2023/03/Captura-de-Pantalla-2023-01-25-a-las-17.26.32-5-1024x650.png",
-      "alt": "README Project Generator"
-    }
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "Edulingo",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "ProfilerDev",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "API Indicadores",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "API Identificador",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "Meetup",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
+  },
+  {
+    "id": "Revolut",
+    "slug": "revolut-art",
+    "name": "revolut",
+    "title": "Blazenet",
+    "description": "",
+    "url": "",
+    "detail_url": "/projects/any",
+    "finished_at": {
+      "duration": "2022"
+    },
+    "full_image": {
+      "src": "/img/projects/example.jpeg",
+      "alt": "Citame BG"
+    },
+    "techs": []
   }
 ]

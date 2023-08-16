@@ -4,8 +4,6 @@ const { position } = Astro.props;
 if (!position) {
   Astro.props.position = "sticky";
 }
-
-console.log({ position });
 ---
 
 <style>
@@ -24,6 +22,13 @@ console.log({ position });
     width: 100%;
     margin: 0 auto;
   }
+
+  @media only screen and (max-width: 1110px) {
+    .header {
+      padding: 0rem 2.5rem;
+      width: 100%;
+    }
+  }
 </style>
 
 <header
@@ -32,25 +37,25 @@ console.log({ position });
     { sticky: position !== "relative", relative: position !== "sticky" },
   ]}
 >
-  <div class="header-content grid grid-cols-2 px-8 py-8 z-50">
+  <div class="header-content grid grid-cols-1 px-8 py-8 z-50 xl:grid-cols-2">
     <div>
       <a href="/" class="text-lg font-semibold text-white">Diego Castillo</a>
     </div>
-    <div class="flex gap-3 h-10">
+    <div class="gap-3 h-10 hidden lg:flex">
       <a
         href="/about"
         class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
       >
         About me</a
       >
-      <div class="flex items-center">
+      <!-- <div class="flex items-center">
         <a
           href="/projects"
           class="text-md font-light py-2 px-3 text-white cursor-pointer border border-transparent hover:border hover:border-white hover:rounded-full hover:transition hover:ease-in delay-75"
         >
           Projects</a
         >
-      </div>
+      </div> -->
       <div class="flex items-center">
         <a
           href="https://read.cv/dcgx"

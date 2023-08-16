@@ -1,0 +1,97 @@
+---
+interface Props {
+  companyName: string;
+  companyDescription: string;
+  companyUrl: string;
+  companyLogo: string;
+  techs: string[];
+  detail: string[];
+  carousel: any;
+}
+
+import { Icon } from "astro-icon";
+import { getTechsWithIcons } from "../../utils/icon-techs";
+
+const {
+  companyName,
+  companyDescription,
+  companyUrl,
+  companyLogo,
+  techs,
+  detail,
+  carousel,
+} = Astro.props;
+
+const modalId = "modal" + companyName.replace(/\s/g, "");
+---
+
+<dialog id={modalId} class="modal">
+  <form method="dialog" class="modal-box w-11/12 max-w-5xl px-10">
+    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+      >✕</button
+    >
+    <div class="flex flex-col items-center justify-center">
+      <img src={"/img/logos/" + companyLogo} width="120px" class="rounded-lg" />
+      <h3 class="font-bold text-2xl text-white text-center py-3">
+        {companyName}
+      </h3>
+      <a
+        class="text-center text-blue-400 hover:text-blue-600"
+        href={companyUrl}
+        target="_blank">{companyUrl.replace("https://", "").replace("/", "")}</a
+      >
+    </div>
+
+    <p class="py-4">
+      {companyDescription}
+    </p>
+    <h4 class="font-bold text-xl text-white text-center py-3">
+      Mi Experiencia
+    </h4>
+    <ul class="list-disc">
+      {
+        detail.map((detailItem) => {
+          return <li>{detailItem}</li>;
+        })
+      }
+    </ul>
+    <h4 class="font-bold text-xl text-white text-center py-3">
+      Tecnologías utilizadas
+    </h4>
+    <div class="flex gap-4">
+      {
+        getTechsWithIcons(techs).map((tech: any) => {
+          return (
+            <a
+              target="_blank"
+              href={tech.url}
+              class="tooltip"
+              data-tip={tech.name}
+            >
+              <Icon name={tech.icon} width="40" height="40" />
+            </a>
+          );
+        })
+      }
+    </div>
+
+    <div class="carousel rounded-box gap-5 mt-10">
+      {
+        carousel.map((carouselItem: any) => {
+          return (
+            <div class="carousel-item max-w-[600px]">
+              <img
+                src={carouselItem.src}
+                alt={carouselItem.alt}
+              />
+            </div>
+          );
+        })
+      }
+    </div>
+  </form>
+
+  <form method="dialog" class="modal-backdrop">
+    <!-- <button>close</button> -->
+  </form>
+</dialog>

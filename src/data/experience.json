@@ -1,0 +1,44 @@
+{
+  "apside": {
+    "detail": [
+      "Implementé diseños de interfaces de usuario en colaboración con el equipo de diseño, utilizando componentes reutilizables y técnicas de diseño responsive, para garantizar una interfaz visualmente atractiva y fácil de usar.",
+      "Desarrollé y mejoré proyectos basados en arquitectura de microservicio y BFF con Python y NestJS.",
+      "Desarrollé nuevas características para sistemas de cliente banco chileno construido en Angular y AngularJS",
+      "Mantenimiento de distintos microservicios Java y Python con Legacy Code e implementación de nuevas características."
+    ],
+    "techs": [
+      "typescript",
+      "javascript",
+      "python",
+      "java",
+      "vue",
+      "angular",
+      "nestjs",
+      "fastapi",
+      "aws"
+    ],
+    "carousel": [{ "src": "", "alt": "" }]
+  },
+  "pckz": {
+    "detail": [
+      "Creación de API REST con PHP/Laravel e integración con SPA en Vue.js/Nuxt.js de múltiples proyectos.",
+      "Desarrollé diferentes sistemas a medida para distintos clientes, según sus requerimientos, trabajando en conjunto con un equipo de desarrollo y UX/UI para garantizar soluciones tecnológicas efectivas y atractivas, utilizando Vue.js como framework principal.",
+      "Mantenimiento y creación de nuevas aplicaciones y sitios web en PHP y Laravel, manejo de base de datos MySQL y PostgreSQL"
+    ],
+    "techs": ["javascript", "php", "vue", "laravel", "aws"],
+    "carousel": [
+      { "src": "/img/experience/pckz/ambar-pet1.png", "alt": "AmbarPet" }
+    ]
+  },
+  "anglo_american": {
+    "detail": [
+      "Implementé un software para el manejo de la información que entrega el proceso de inspección de ánodos para desktop y web con Angular, WPF, C# y .NET.",
+      "Mejoré el proceso de ingreso de datos y creación de informes de inspección para una oficina de una fundición de cobre automatizando a través de un software de escritorio con sistema de análisis de datos, descarga de reportes en excel y pdf.",
+      "Manejo intermedio de azure y despliegue"
+    ],
+    "techs": ["c_sharp", "typescript", ".net", "angular", "wpf", "azure"],
+    "carousel": [
+      { "src": "/img/experience/angloamerican/sgc1.png", "alt": "SGC" }
+    ]
+  }
+}
