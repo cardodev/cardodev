@@ -5,41 +5,27 @@ interface Props {
   companyUrl: string;
   companyLogo: string;
   techs: string[];
+  detail: string[];
 }
 
-import ExperienceDetail from "../experience/ExperienceDetail.astro";
 import { Icon } from "astro-icon";
+import { getTechsWithIcons } from "../../utils/icon-techs";
 
-const { companyName, companyDescription, companyUrl, companyLogo, techs } =
-  Astro.props;
-
-const defaultTechs = {
-  typescript: {
-    name: "TypeScript",
-    icon: "logos:typescript-icon",
-    url: "https://www.typescriptlang.org/",
-  },
-  vue: {
-    name: "Vue.js",
-    icon: "logos:vue",
-    url: "https://vuejs.org/",
-  },
-};
-
-const techsIcons = techs.map((tech) => {
-  const techData = defaultTechs[tech];
-  return {
-    name: techData.name,
-    icon: techData.icon,
-    url: techData.url,
-  };
-});
+const {
+  companyName,
+  companyDescription,
+  companyUrl,
+  companyLogo,
+  techs,
+  detail,
+} = Astro.props;
 
 const modalId = "modal" + companyName.replace(/\s/g, "");
 ---
 
 <dialog id={modalId} class="modal">
   <form method="dialog" class="modal-box w-11/12 max-w-5xl px-10">
+    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
     <div class="flex flex-col items-center justify-center">
       <img src={"/logos/" + companyLogo} width="120px" class="rounded-lg" />
       <h3 class="font-bold text-2xl text-white text-center py-3">
@@ -58,13 +44,19 @@ const modalId = "modal" + companyName.replace(/\s/g, "");
     <h4 class="font-bold text-xl text-white text-center py-3">
       Mi Experiencia
     </h4>
-    <ExperienceDetail company="pckz"/>
+    <ul class="list-disc">
+      {
+        detail.map((detailItem) => {
+          return <li>{detailItem}</li>;
+        })
+      }
+    </ul>
     <h4 class="font-bold text-xl text-white text-center py-3">
       Tecnologías utilizadas
     </h4>
     <div class="flex gap-4">
       {
-        techsIcons.map((tech) => {
+        getTechsWithIcons(techs).map((tech: any) => {
           return (
             <a
               target="_blank"
@@ -79,7 +71,8 @@ const modalId = "modal" + companyName.replace(/\s/g, "");
       }
     </div>
   </form>
+
+  <form method="dialog" class="modal-backdrop">
+    <!-- <button>close</button> -->
+  </form>
 </dialog>
-<form method="dialog" class="modal-backdrop">
-  <button>close</button>
-</form>

@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import experienceDetail from "../../data/experience.json";
 import ExperienceModal from "../shared/ExperienceModal.astro";
 ---
 
@@ -153,20 +153,23 @@ import ExperienceModal from "../shared/ExperienceModal.astro";
     companyUrl="https://apside.cl/"
     companyLogo="apside.jpeg"
     companyDescription="Empresa chilena de desarrollo de software con amplia experiencia en el desarrollo de proyectos, una fuerte orientación al cliente y un alto nivel técnico."
-    techs={["typescript", "vue"]}
+    detail={experienceDetail["apside"].detail}
+    techs={experienceDetail["apside"].techs}
   />
   <ExperienceModal
     companyName="Pckz"
     companyUrl="https://pckz.cl/"
     companyLogo="pckz.gif"
     companyDescription="Empresa chilena de desarrollo de software con amplia experiencia en el desarrollo de proyectos, una fuerte orientación al cliente y un alto nivel técnico."
-    techs={["typescript", "vue"]}
+    detail={experienceDetail["pckz"].detail}
+    techs={experienceDetail["pckz"].techs}
   />
   <ExperienceModal
     companyName="Anglo American"
     companyUrl="https://chile.angloamerican.com/"
     companyLogo="anglo-american.png"
     companyDescription="Empresa minera líder a nivel mundial especializada en las ventas de cobre y adheridos, con sede en Chile. "
-    techs={["typescript", "vue"]}
+    detail={experienceDetail["anglo_american"].detail}
+    techs={experienceDetail["anglo_american"].techs}
   />
 </section>
