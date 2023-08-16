@@ -13,7 +13,7 @@
       "duration": "2023"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": ["ruby", "ruby-on-rails", "vuejs", "typescript"]
@@ -30,7 +30,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -47,7 +47,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -64,7 +64,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -81,7 +81,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -98,7 +98,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -115,7 +115,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -132,7 +132,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
@@ -149,7 +149,7 @@
       "duration": "2022"
     },
     "full_image": {
-      "src": "/projects/example.jpeg",
+      "src": "/img/projects/example.jpeg",
       "alt": "Citame BG"
     },
     "techs": []
