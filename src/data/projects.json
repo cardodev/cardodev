@@ -1,9 +1,9 @@
 [
   {
-    "id": "citame",
-    "slug": "citame",
-    "name": "Citame",
-    "title": "citame",
+    "id": "ChatPDF",
+    "slug": "ChatPDF",
+    "name": "ChatPDF",
+    "title": "ChatPDF",
     "description": "",
     "url": "",
     "detail_url": "/projects/any",
@@ -14,15 +14,15 @@
     },
     "full_image": {
       "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
+      "alt": "Talki&meet"
     },
     "techs": ["ruby", "ruby-on-rails", "vuejs", "typescript"]
   },
   {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "Revolut",
-    "title": "Revolut",
+    "id": "Talki&meet",
+    "slug": "Talki&meet",
+    "name": "Talki&meet",
+    "title": "Talki&meet",
     "description": "",
     "url": "",
     "detail_url": "/projects/any",
@@ -31,126 +31,7 @@
     },
     "full_image": {
       "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "API Geo",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "Edulingo",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "ProfilerDev",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "API Indicadores",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "API Identificador",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "Meetup",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
-    },
-    "techs": []
-  },
-  {
-    "id": "Revolut",
-    "slug": "revolut-art",
-    "name": "revolut",
-    "title": "Blazenet",
-    "description": "",
-    "url": "",
-    "detail_url": "/projects/any",
-    "finished_at": {
-      "duration": "2022"
-    },
-    "full_image": {
-      "src": "/img/projects/example.jpeg",
-      "alt": "Citame BG"
+      "alt": "Talki&meet"
     },
     "techs": []
   }

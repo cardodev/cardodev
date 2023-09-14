@@ -1,86 +1,28 @@
 ---
-export interface Props {
-  projects: any[];
-};
-const { projects } = Astro.props;
+import video1 from "../../assets/work/talkimeet/talkimeet-web-full.mp4";
 ---
 
 <section class="grid grid-cols-2 gap-3">
-  {
-    projects.map((project) => {
-      return (
-        <article class="project_thumbnail cursor-pointer">
-          <a class="project_access" href={project.detail_url} />
-          <div class="project_artwork" aria-hidden="true">
-            <img
-              src={project.full_image.src}
-              alt={project.full_image.alt}
-            />
-          </div>
-          <div class="project_info">
-            <span class="text-gray-400 text-sm">{project.finished_at.duration}</span>
-            <h3 class="text-gray-100">
-              {project.title}
-            </h3>
-          </div>
-        </article>
-      );
-    })
-  }
-  <!-- <article class="project_thumbnail cursor-pointer">
-    <a class="project_access" href=""></a>
-    <div class="project_artwork" aria-hidden="true">
-      <img
-        src="/projects/example.png"
-        alt="Fintolio - An unofficial Fintual client for iOS"
-      />
-    </div>
-    <div class="project_info">
-      <span class="text-gray-400 text-sm">Since 2023</span>
-      <h3 class="text-gray-100">
-        Fintolio - An unofficial Fintual client for iOS
-      </h3>
+  <article class="project_thumbnail cursor-pointer h-96">
+    <a
+      class="project_access cursor-pointer"
+      target="_blank"
+      href="https://talkimeet.vercel.app/"
+    >
+    </a>
+    <video
+      autoplay
+      loop
+      muted
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; padding: 25px 0; margin: 0;"
+    >
+      <source src={video1} type="video/mp4" />
+      Tu navegador no admite la reproducción de videos.
+    </video>
+
+    <div class="project_info absolute bottom-0 h-1">
+      <span class="text-gray-400 text-sm">{"2022"}</span>
+      <h3 class="text-gray-100">Talki&meet</h3>
     </div>
   </article>
-  <article class="project_thumbnail cursor-pointer">
-    <a class="project_access" href=""></a>
-    <div class="project_artwork" aria-hidden="true">
-      <img
-        src="/projects/example.png"
-        alt="Fintolio - An unofficial Fintual client for iOS"
-      />
-    </div>
-    <div class="project_info">
-      <span class="text-gray-400 text-sm">Since 2023</span>
-      <h3 class="text-gray-100">
-        Forms management system for the Chilean mining company
-      </h3>
-    </div>
-  </article>
-  <article class="project_thumbnail cursor-pointer">
-    <a class="project_access" href=""></a>
-    <div class="project_artwork" aria-hidden="true">
-      <img
-        src="/projects/example.png"
-        alt="Fintolio - An unofficial Fintual client for iOS"
-      />
-    </div>
-    <div class="project_info">
-      <span class="text-gray-400 text-sm">Since 2022</span>
-      <h3 class="text-gray-100">PRTAL - Proposals management system</h3>
-    </div>
-  </article>
-  <article class="project_thumbnail cursor-pointer">
-    <a class="project_access" href="/projects/ambar-pet"></a>
-    <div class="project_artwork" aria-hidden="true">
-      <img
-        src="/projects/ambar-pet/full.png"
-        alt="Fintolio - An unofficial Fintual client for iOS"
-      />
-    </div>
-    <div class="project_info">
-      <span class="text-gray-400 text-sm">Since 2021</span>
-      <h3 class="text-gray-100">Ambar.pet - Veterinary management system</h3>
-    </div>
-  </article> -->
 </section>
