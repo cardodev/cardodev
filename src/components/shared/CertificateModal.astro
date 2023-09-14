@@ -1,0 +1,22 @@
+---
+interface Props {}
+
+import { Icon } from "astro-icon";
+---
+
+<dialog id="certificateModal" class="modal">
+  <form method="dialog" class="modal-box w-11/12 max-w-5xl px-10">
+    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+      >✕</button
+    >
+    <div class="flex flex-col items-center justify-center">
+      <iframe
+        src={`https://docs.google.com/gview?url=${encodeURIComponent("https://drive.google.com/uc?id=1cKP4n3bpGmEZktqAFFfTj7NrojhIEizB")}&embedded=true`}
+        class="w-full" style="height: 850px"></iframe>
+    </div>
+  </form>
+
+  <form method="dialog" class="modal-backdrop">
+    <!-- <button>close</button> -->
+  </form>
+</dialog>

@@ -1,3 +1,7 @@
+---
+import CertificateModal from "../shared/CertificateModal.astro";
+---
+
 <section>
   <h3
     class="text-sm text-black/70 dark:text-white/50 my-3 font-medium uppercase"
@@ -5,10 +9,15 @@
     Education
   </h3>
   <div
-    class="rounded-lg card-base bg-gray-900 overflow-x-hidden transition-colors p-4 cursor-pointer"
+    class="rounded-lg card-base disable-padding bg-gray-900 overflow-x-hidden transition-colors cursor-pointer"
   >
-    <ol class="mt-6 space-y-4">
-      <li class="flex gap-4">
+    <ol class="mt-6">
+      <li
+        class="flex gap-4 py-4 px-5 hover:bg-zinc-800 hover:rounded-lg"
+        onclick="
+        certificateModal.showModal()
+"
+      >
         <div
           class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
         >
@@ -30,7 +39,7 @@
           </div>
         </div>
       </li>
-      <li class="flex gap-4">
+      <li class="flex gap-4 py-4 px-5 hover:bg-zinc-800 hover:rounded-lg">
         <div
           class="relative flex items-center justify-center flex-none w-10 h-10 mt-1 rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
         >
@@ -54,6 +63,8 @@
       </li>
     </ol>
   </div>
+
+  <CertificateModal />
 
   <!-- <h3
     class="text-sm text-black/70 dark:text-white/50 my-3 font-medium uppercase"
