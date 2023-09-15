@@ -1,6 +1,7 @@
 ---
 import talkimeetVideo from "../../assets/work/talkimeet/talkimeet-web-full.mp4";
 import chatdocVideo from "../../assets/work/chatdoc/chatdoc-web-full.mp4";
+import climateappVideo from "../../assets/work/climateapp/climateapp-app-full.mp4";
 ---
 
 <section class="grid grid-cols-2 gap-3">
@@ -45,7 +46,30 @@ import chatdocVideo from "../../assets/work/chatdoc/chatdoc-web-full.mp4";
 
     <div class="project_info absolute bottom-0 h-1">
       <span class="text-gray-400 text-sm">{"2022"}</span>
-      <h3 class="text-gray-100">Talki&meet</h3>
+      <h3 class="text-gray-100">Talki&Meet</h3>
+    </div>
+  </article>
+
+  <article class="project_thumbnail cursor-pointer h-96 mt-5">
+    <a
+      class="project_access cursor-pointer"
+      target="_blank"
+      href="https://github.com/dcgx/ClimateApp"
+    >
+    </a>
+    <video
+      autoplay
+      loop
+      muted
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; padding: 25px 0; margin: 0;"
+    >
+      <source src={climateappVideo} type="video/mp4" />
+      Tu navegador no admite la reproducción de videos.
+    </video>
+
+    <div class="project_info absolute bottom-0 h-1">
+      <span class="text-gray-400 text-sm">{"2022"}</span>
+      <h3 class="text-gray-100">ClimateApp</h3>
     </div>
   </article>
 </section>
