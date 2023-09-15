@@ -12,12 +12,74 @@ import Layout from "../../layouts/Layout.astro";
         </h1>
         <p>My public projects on GitHub / GitLab.</p>
       </header>
-      <div class="grid gap-4 md:grid-cols-2">
-        <a
-          href="https://github.com/dcgx/social-blade"
-          target="_blank"
-          class="cursor-pointer"
-        >
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+        <article>
+          <a
+            href="https://github.com/dcgx/chatdoc"
+            target="_blank"
+            class="cursor-pointer absolute top-0 right-0 bottom-0 left-0"
+            style="z-index: 1;"
+          >
+          </a>
+
+          <div class="rounded-lg card-base">
+            <div class="space-y-2">
+              <div class="flex justify-between space-x-2">
+                <h3
+                  class="text-black/90 dark:text-white/90 items-center truncate space-x-1"
+                >
+                  <span class="text-black/50 dark:text-white/30">dcgx/</span>
+                  <span>chatdoc</span>
+                </h3>
+              </div>
+              <p class="text-black/50 dark:text-white/30 line-clamp-2">
+                Chat with documents
+
+                <a class="flex pt-2">
+                  <img src="https://vercel.com/button" width="70" alt="" />
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <a
+            href="https://github.com/dcgx/talkimeet"
+            target="_blank"
+            class="cursor-pointer absolute top-0 right-0 bottom-0 left-0"
+            style="z-index: 1;"
+          >
+          </a>
+
+          <div class="rounded-lg card-base">
+            <div class="space-y-2">
+              <div class="flex justify-between space-x-2">
+                <h3
+                  class="text-black/90 dark:text-white/90 items-center truncate space-x-1"
+                >
+                  <span class="text-black/50 dark:text-white/30">dcgx/</span>
+                  <span>talkimeet</span>
+                </h3>
+              </div>
+              <p class="text-black/50 dark:text-white/30 line-clamp-2">
+                A meet app built with Next.js & Twilio.
+                <a class="flex pt-2">
+                  <img src="https://vercel.com/button" width="70" alt="" />
+                </a>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <a
+            href="https://github.com/dcgx/social-blade"
+            target="_blank"
+            class="cursor-pointer absolute top-0 right-0 bottom-0 left-0"
+            style="z-index: 1;"
+          >
+          </a>
           <div class="rounded-lg card-base">
             <div class="space-y-2">
               <div class="flex justify-between space-x-2">
@@ -32,23 +94,8 @@ import Layout from "../../layouts/Layout.astro";
                 A simple social media built with Laravel.
               </p>
             </div>
-
-            <!-- <div class="mt-4">
-              <div
-                class="flex items-center justify-between text-black/50 dark:text-white/30"
-              >
-                <span> Stars:</span>
-                <span> 0</span>
-              </div>
-              <div
-                class="flex items-center justify-between text-black/50 dark:text-white/30"
-              >
-                <span> Language:</span>
-                <span> v</span>
-              </div>
-            </div> -->
           </div>
-        </a>
+        </article>
       </div>
     </div>
   </main>
