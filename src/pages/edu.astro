@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+import Education from "../components/education/education.astro"
+import Certification from "../components/education/Certification.astro"
+import Course from "../components/education/Course.astro"
+---
+
+<Layout title="About">
+  <div>
+    <div class="relative w-full">
+      <div class="absolute" style="left: 50%; bottom: 0">
+        <Icon name="emojione:glowing-star" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 55%">
+        <Icon name="fxemoji:rocket" width="40" height="40" />
+      </div>
+      <div class="absolute" style="left: 45%; top: 40px">
+        <Icon name="fxemoji:rocket" width="40" height="40" />
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-10 py-40 mx-auto text-center">
+      <!-- <h1 class="text-4xl font-semibold text-center text-white">
+        My Education
+      </h1> -->
+
+      <div>
+        <h2 class="text-2xl text-white mb-4 font-semibold">Educación</h2>
+
+        <div class="grid grid-cols-2 gap-4 w-full">
+          <Education></Education>
+          <Education></Education>
+          <Education></Education>
+          <!-- <div class="flex items-center justify-start gap-4">
+            <img src="/img/logos/unab.png" width="70" />
+
+            <div class="text-left">
+              <h3 class="text-xl text-white font-semibold">
+                Universidad Andrés Bello
+              </h3>
+              <p class="text-white">Ingeniería en Computación e Informática</p>
+              <p>2018 - 2021</p>
+              <button
+                class="border border-gray-300 px-4 py-2 rounded-full my-4 hover:bg-gray-800"
+                >Mostrar credencial</button
+              >
+            </div>
+          </div>
+          <div class="flex items-center justify-start gap-4">
+            <img src="/img/logos/utfsm.png" width="130" />
+
+            <div class="text-left">
+              <h3 class="text-xl text-white font-semibold">
+                Universidad Técnica Federico Santa María
+              </h3>
+              <p class="text-white">Técnico Universitario en Informática</p>
+              <p>2018 - 2021</p>
+              <button
+                class="border border-gray-300 px-4 py-2 rounded-full my-4 hover:bg-gray-800"
+                >Mostrar credencial</button
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-2xl text-white mb-4 font-semibold">
+          Licencias y certificaciones
+        </h2>
+
+        <div class="grid grid-cols-2 w-full">
+          <Certification></Certification>
+          <Certification></Certification>
+          <Certification></Certification>
+          <Certification></Certification>
+          <!-- <div class="flex items-center justify-start gap-4">
+            <img
+              src="https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+              width="130"
+              alt=""
+            />
+            <div class="text-left">
+              <h3 class="text-xl text-white font-semibold">
+                AWS Certified Cloud Practitioner
+              </h3>
+              <p class="text-white">Amazon Web Services (AWS)</p>
+              <p>Expedición dic. 2016 - Vencimiento: jan. 2023</p>
+              <span>ID Credencial: 4eb108c8-8f84-44b0-abf9-fc0192570949</span>
+              <button
+                class="border border-gray-300 px-4 py-2 rounded-full my-4 hover:bg-gray-700"
+                >Mostrar credencial</button
+              >
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-2xl text-white mb-4 font-semibold">Otros cursos</h2>
+
+        <div class="grid grid-cols-3 w-full gap-4">
+          <Course />
+          <Course />
+          <Course />
+          <Course />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
