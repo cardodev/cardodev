@@ -1,15 +1,42 @@
+---
+const { image, title, institution, status, initDate, dueDate } = Astro.props;
+
+const institutions = {
+  unab: {
+    label: "Universidad Andrés Bello",
+    img: "/img/logos/unab.png",
+  },
+  utfsm: {
+    label: "Universidad Técnica Federico Santa María",
+    img: "/img/logos/utfsm.png",
+  },
+};
+
+const selectedInstitution =
+  institutions[institution.toLowerCase() as keyof typeof institutions];
+---
+
 <div class="grid grid-cols-4 gap-4">
   <div class="flex object-cover items-center justify-center">
-    <img src="/img/logos/unab.png" width="70" />
+    <img src={selectedInstitution.img} width="70" />
   </div>
 
   <div class="text-left col-span-3">
-    <h3 class="text-xl text-white font-semibold">Universidad Andrés Bello</h3>
-    <p class="text-white">Licenciatura en Ingeniería</p>
+    <h3 class="text-xl text-white font-semibold">
+      {selectedInstitution.label}
+    </h3>
+    <p class="text-white">{title}</p>
     <p>2018 - 2021</p>
-    <button
-      class="border border-gray-300 px-4 py-2 rounded-full my-4 hover:bg-gray-800"
-      >Mostrar credencial</button
-    >
+    {
+      status === "pending" ? (
+        <div class=" px-4 py-2 rounded-full my-4 inline-flex bg-slate-600 cursor-progress">
+          Cursando
+        </div>
+      ) : (
+        <button class="border border-gray-300 px-4 py-2 rounded-full my-4 cursor-pointer hover:bg-gray-800">
+          Ver certificado
+        </button>
+      )
+    }
   </div>
 </div>
