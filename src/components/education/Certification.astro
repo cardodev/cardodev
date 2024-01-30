@@ -1,0 +1,28 @@
+---
+const { image, title, company, status, initDate, dueDate } = Astro.props;
+---
+
+<div class="flex items-center justify-start gap-4">
+  <img src={image} width="130" alt="" />
+  <div class="text-left">
+    <h3 class="text-xl text-white font-semibold">
+      {title}
+    </h3>
+    <p class="text-white">
+      {company === "AWS" ? "Amazon Web Services (AWS)" : company}
+    </p>
+    <p>Expedición dic. 2016 - Vencimiento: jan. 2023</p>
+    <span>ID Credencial: 4eb108c8-8f84-44b0-abf9-fc0192570949</span>
+    {
+      status === "pending" ? (
+        <div class=" px-4 py-2 rounded-full my-4 inline-flex bg-slate-600 cursor-not-allowed">
+          Cursando
+        </div>
+      ) : (
+        <button class="border border-gray-300 px-4 py-2 rounded-full my-4 cursor-pointer hover:bg-gray-800">
+          Mostrar credencial
+        </button>
+      )
+    }
+  </div>
+</div>
