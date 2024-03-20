@@ -1,5 +1,5 @@
 ---
-const { image, title, company, date, status } = Astro.props;
+const { image, title, company, date, status, credentialUrl } = Astro.props;
 
 const logos = {
   platzi:
@@ -21,10 +21,14 @@ const companyLogo = logos[company.toLowerCase() as keyof typeof logos];
     <p>Expedición {date}</p>
     <!-- <span class="text-xs">ID Credencial: 4eb108c8-8f84-44b0-abf9-fc0192570949</span> -->
     {
-      status === "pending" && (
+      status === "pending" ? (
         <div class="border border-yellow-300 px-4 py-2 mt-2 inline-flex rounded-full cursor-not-allowed  bg-yellow-300 text-black ">
           Pendiente
         </div>
+      ) : (
+        <a href={credentialUrl} target="_blank" class="border border-gray-300 px-4 py-2 rounded-full my-5 hover:bg-gray-700 top-4">
+          Mostrar credencial
+        </a>
       )
     }
     <!-- <button
